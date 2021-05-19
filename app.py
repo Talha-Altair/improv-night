@@ -39,7 +39,7 @@ def home4():
 
 
 @socketio.on('message')
-def message(methods=['GET']):
+def message():
     events = [
         'Elevator Pitching','Ship-Wreck','Quiz-Game','fan-Fiction'
         ]
