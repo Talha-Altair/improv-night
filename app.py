@@ -41,9 +41,9 @@ def home4():
 @socketio.on('message')
 def message():
     events = [
-        'Elevator Pitching','Ship-Wreck','Quiz-Game','fan-Fiction'
+        'Elevator Pitching','Ship-Wreck','fan-Fiction'
         ]
-    n = random.randint(0,4)
+    n = random.randint(0,3)
     event = events[n]
     socketio.emit('completed',event)
 
